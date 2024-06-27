@@ -7,12 +7,19 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background: #211d1b;
             font-family: Arial, sans-serif;
+            position: relative;
+        }
+        .title {
+            color: #d8f3dc;
+            margin-bottom: 40px;
+            font-size: 24px;
         }
         .container {
             display: flex;
@@ -37,9 +44,27 @@
         .link-box h2 {
             margin: 0;
         }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #d8f3dc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(216, 243, 220, 0.5);
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .back-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px #00a67d;
+        }
     </style>
 </head>
 <body>
+    <a href="https://devmnnmatt.github.io/" class="back-button">torna alla pagina principale</a>
+    <div class="title">Manno Matteo - Elaborati di PCTO</div>
     <div class="container">
         <a href="https://www.canva.com/design/DAGIfpK9dig/OZWBiW2K05HPi57ZRCrlQw/edit?utm_content=DAGIfpK9dig&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="link-box">
             <h2>PCTO - Italiano</h2>
